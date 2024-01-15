@@ -42,7 +42,19 @@ img {
 .right-side {
     width: 60vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     background-color: rgb(102, 42, 2);
 }
 
+fieldset {
+    border: none;
+    display: flex;
+}
+
+.align {
+    display: flex;
+    flex-direction: column;
+}
