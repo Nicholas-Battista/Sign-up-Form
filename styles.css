@@ -33,6 +33,16 @@ body {
     padding: 20px 0 20px 0;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    border: 2px solid burlywood;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -52,9 +62,57 @@ img {
 fieldset {
     border: none;
     display: flex;
+    gap: 5vw;
+}
+
+fieldset:last-child {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
 }
 
 .align {
     display: flex;
     flex-direction: column;
+    gap: 1em;
+}
+
+input {
+    background-color: burlywood;
+    border: 1px solid rgba(163, 127, 80, 0.979);
+    border-radius: 1em;
+    height: 2em;
+    width: 30em;
+    letter-spacing: 0.05rem;
+
+}
+
+input:focus {
+    border: 1px solid blue;
+}
+
+p {
+    margin: 0;
+}
+button {
+    margin: 0;
+    background-color: burlywood;
+    padding: 1rem 2rem;
+    border: 1px solid burlywood;
+    border-radius: 2rem;
+    color:rgb(102, 42, 2);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color:rgb(102, 42, 2);
+    color: burlywood;
+    border: 1px solid burlywood;
+
+    box-sizing: border-box;
+}
+
+label {
+    color: wheat;
+    letter-spacing: 0.2em;
 }
