@@ -84,9 +84,10 @@ img {
 
 .top-content h2 {
     align-self: flex-start;
-    margin-left: 5vw;
+    margin-left: 6.75vw;
     margin-bottom: 0;
-    padding-left: 2rem;
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(102, 42, 2);
 }
 
 fieldset {
@@ -127,7 +128,7 @@ input:focus {
 }
 
 input:not(:focus):valid {
-    border: 2px solid lightgreen;
+    border: 2px solid darkgreen;
 }
 
 
@@ -181,3 +182,17 @@ a {
     color: rgb(102, 42, 2);
 }
 
+.error-message {
+    font-size: 0.75em;
+}
+
+li {
+    font-size: 0.70em;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}

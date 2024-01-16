@@ -19,7 +19,7 @@
     </div>
     <div class="right-side">
         <div class="top-content">
-            <h3>blah blah</h3>
+            <h3></h3>
             <h2>Get started</h2>
         </div>
 
@@ -50,11 +50,16 @@
                 <div class="align">
                     <label for="password">PASSWORD</label>
                     <input type="password" id="password" name="password" required placeholder="" pattern="^(?=.*\d)(?=.*[A-Z]).{10,}$" >
+                    <ul>
+                        <li>Password must contain at least 10 characters</li>
+                        <li>Password must have at least 1 capital letter and 1 number</li>
+                    </ul>
                 </div>
 
                 <div class="align">
                     <label for="confirmPass">CONFRIM PASSWORD</label>
                     <input type="password" id="confirmPass" required placeholder="" pattern="^(?=.*\d)(?=.*[A-Z]).{10,}$">
+                    <div id="password-error" class="error-message"></div>
                 </div>
             </fieldset>
             <fieldset>
@@ -65,5 +70,6 @@
             </fieldset>
         </form>
     </div>
+<script src="script.js"></script>
 </body>
 </html>
