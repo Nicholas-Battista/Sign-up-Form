@@ -17,6 +17,10 @@ function checkPasswordMatch() {
             }
 };
 
+function clearErrorMessage() {
+    errorMsg.textContent = "";
+}
 
+firstEntry.addEventListener('input', clearErrorMessage);
 secondEntry.addEventListener('blur', checkPasswordMatch);
         
